@@ -1,4 +1,10 @@
 .navigation {
+  @include respond(tab-land) {
+    display: none;
+  }
+  @include respond(phone) {
+    display: none;
+  }
   font-family: "Helixa";
   &__checkbox {
     display: none;
@@ -20,11 +26,6 @@
     @include respond(tab-port) {
       top: 4rem;
       right: 4rem;
-    }
-
-    @include respond(phone) {
-      top: 3rem;
-      right: 3rem;
     }
   }
 
