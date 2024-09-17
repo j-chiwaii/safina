@@ -1,0 +1,57 @@
+.footer {
+  background-color: $dark-grey-1;
+  padding: 10rem 0;
+  font-size: 1.5rem;
+  color: $dark-grey;
+  font-family: "Helixa";
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__logo {
+    font-size: 7rem;
+    background-image: linear-gradient(to right, $dark-green, $logo-white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    @include flex-center($direction: row, $align: center, $justify: center);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+    padding: 0 16rem;
+  }
+
+  &__navigation,
+  &__copyright {
+    border-top: 1px solid $grey;
+  }
+
+  &__item {
+    letter-spacing: 1px;
+  }
+
+  &__link {
+    padding: 3rem;
+    &:link,
+    &:visited {
+      color: $dark-grey;
+      text-transform: uppercase;
+    }
+    &:hover,
+    &:active {
+      margin-bottom: 0;
+      padding-bottom: 2rem;
+      color: $dark-green;
+      border-bottom: 3px solid $dark-green;
+    }
+  }
+
+  &__copyright {
+    letter-spacing: 0.4px;
+  }
+}
