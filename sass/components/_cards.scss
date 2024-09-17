@@ -68,7 +68,7 @@
           $color-secondary-light,
           $color-secondary-dark
         ),
-        url(/images/beach-explorers.jpg);
+        url(/assets/images/cards/beach-explorers.jpg);
       background-position: center;
     }
     &--two {
@@ -77,7 +77,7 @@
           rgba($medium-green, 0.85),
           rgba($dark-green, 0.85)
         ),
-        url(/images/night.jpg);
+        url(/assets/images/cards/night.jpg);
       background-position: center;
     }
     &--three {
@@ -86,7 +86,7 @@
           rgba($color-tertiary-light, 0.85),
           rgba($color-tertiary-dark, 0.85)
         ),
-        url(/images/explore.jpg);
+        url(/assets/images/cards/explore.jpg);
       background-position: center;
     }
   }
