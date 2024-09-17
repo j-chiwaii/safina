@@ -1,5 +1,8 @@
 .container {
   position: relative;
+  @include respond(tab-land) {
+    display: none;
+  }
   @include respond(phone) {
     display: none;
   }
