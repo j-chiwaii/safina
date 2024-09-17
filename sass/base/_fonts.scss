@@ -1,0 +1,583 @@
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-Black.eot");
+  src: url("/assets/fonts/Mosvita-Black.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-Black.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-Black.woff") format("woff"),
+    url("/assets/fonts/Mosvita-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-BoldExpanded.eot");
+  src: url("/assets/fonts/Mosvita-BoldExpanded.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-BoldExpanded.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-BoldExpanded.woff") format("woff"),
+    url("/assets/fonts/Mosvita-BoldExpanded.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-BlackExpanded.eot");
+  src: url("/assets/fonts/Mosvita-BlackExpanded.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-BlackExpanded.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-BlackExpanded.woff") format("woff"),
+    url("/assets/fonts/Mosvita-BlackExpanded.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("//assets/fonts/Mosvita-ExtraBold.eot");
+  src: url("//assets/fonts/Mosvita-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("//assets/fonts/Mosvita-ExtraBold.woff2") format("woff2"),
+    url("//assets/fonts/Mosvita-ExtraBold.woff") format("woff"),
+    url("//assets/fonts/Mosvita-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("//assets/fonts/Mosvita-Bold.eot");
+  src: url("//assets/fonts/Mosvita-Bold.eot?#iefix") format("embedded-opentype"),
+    url("//assets/fonts/Mosvita-Bold.woff2") format("woff2"),
+    url("//assets/fonts/Mosvita-Bold.woff") format("woff"),
+    url("//assets/fonts/Mosvita-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("//assets/fonts/Mosvita-Expanded.eot");
+  src: url("//assets/fonts/Mosvita-Expanded.eot?#iefix")
+      format("embedded-opentype"),
+    url("//assets/fonts/Mosvita-Expanded.woff2") format("woff2"),
+    url("//assets/fonts/Mosvita-Expanded.woff") format("woff"),
+    url("//assets/fonts/Mosvita-Expanded.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-ExtraBoldExpanded.eot");
+  src: url("/assets/fonts/Mosvita-ExtraBoldExpanded.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-ExtraBoldExpanded.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-ExtraBoldExpanded.woff") format("woff"),
+    url("/assets/fonts/Mosvita-ExtraBoldExpanded.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-Medium.eot");
+  src: url("/assets/fonts/Mosvita-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-Medium.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-Medium.woff") format("woff"),
+    url("/assets/fonts/Mosvita-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-Light.eot");
+  src: url("/assets/fonts/Mosvita-Light.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-Light.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-Light.woff") format("woff"),
+    url("/assets/fonts/Mosvita-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-Regular.eot");
+  src: url("/assets/fonts/Mosvita-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-Regular.woff") format("woff"),
+    url("/assets/fonts/Mosvita-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-LightExpanded.eot");
+  src: url("/assets/fonts/Mosvita-LightExpanded.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-LightExpanded.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-LightExpanded.woff") format("woff"),
+    url("/assets/fonts/Mosvita-LightExpanded.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-MediumExpanded.eot");
+  src: url("/assets/fonts/Mosvita-MediumExpanded.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-MediumExpanded.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-MediumExpanded.woff") format("woff"),
+    url("/assets/fonts/Mosvita-MediumExpanded.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-SemiBoldExpanded.eot");
+  src: url("/assets/fonts/Mosvita-SemiBoldExpanded.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-SemiBoldExpanded.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-SemiBoldExpanded.woff") format("woff"),
+    url("/assets/fonts/Mosvita-SemiBoldExpanded.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mosvita";
+  src: url("/assets/fonts/Mosvita-SemiBold.eot");
+  src: url("/assets/fonts/Mosvita-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Mosvita-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/Mosvita-SemiBold.woff") format("woff"),
+    url("/assets/fonts/Mosvita-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOBold.eot");
+  src: url("/assets/fonts/BANDICOBold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/BANDICOBold.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOBold.woff") format("woff"),
+    url("/assets/fonts/BANDICOBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOBold_1.eot");
+  src: url("/assets/fonts/BANDICOBold_1.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/BANDICOBold_1.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOBold_1.woff") format("woff"),
+    url("/assets/fonts/BANDICOBold_1.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOBoldItalic.eot");
+  src: url("/assets/fonts/BANDICOBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/BANDICOBoldItalic.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOBoldItalic.woff") format("woff"),
+    url("/assets/fonts/BANDICOBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOBoldItalic_1.eot");
+  src: url("/assets/fonts/BANDICOBoldItalic_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/BANDICOBoldItalic_1.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOBoldItalic_1.woff") format("woff"),
+    url("/assets/fonts/BANDICOBoldItalic_1.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOItalic.eot");
+  src: url("/assets/fonts/BANDICOItalic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/BANDICOItalic.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOItalic.woff") format("woff"),
+    url("/assets/fonts/BANDICOItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOItalic_1.eot");
+  src: url("/assets/fonts/BANDICOItalic_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/BANDICOItalic_1.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOItalic_1.woff") format("woff"),
+    url("/assets/fonts/BANDICOItalic_1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOLight.eot");
+  src: url("/assets/fonts/BANDICOLight.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/BANDICOLight.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOLight.woff") format("woff"),
+    url("/assets/fonts/BANDICOLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOLight_1.eot");
+  src: url("/assets/fonts/BANDICOLight_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/BANDICOLight_1.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOLight_1.woff") format("woff"),
+    url("/assets/fonts/BANDICOLight_1.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOLIGHTITALIC.eot");
+  src: url("/assets/fonts/BANDICOLIGHTITALIC.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/BANDICOLIGHTITALIC.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOLIGHTITALIC.woff") format("woff"),
+    url("/assets/fonts/BANDICOLIGHTITALIC.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOLIGHTITALIC_1.eot");
+  src: url("/assets/fonts/BANDICOLIGHTITALIC_1.eot?#iefix")
+      format("embedded-opentype"),
+    url(/assets/fonts/"/assets/fonts/BANDICOLIGHTITALIC_1.woff2")
+      format("woff2"),
+    url("/assets/fonts/BANDICOLIGHTITALIC_1.woff") format("woff"),
+    url("/assets/fonts/BANDICOLIGHTITALIC_1.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOThin.eot");
+  src: url("/assets/fonts/BANDICOThin.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/BANDICOThin.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOThin.woff") format("woff"),
+    url("/assets/fonts/BANDICOThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOThin_1.eot");
+  src: url("/assets/fonts/BANDICOThin_1.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/BANDICOThin_1.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOThin_1.woff") format("woff"),
+    url("/assets/fonts/BANDICOThin_1.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOThinItalic.eot");
+  src: url("/assets/fonts/BANDICOThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/BANDICOThinItalic.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOThinItalic.woff") format("woff"),
+    url("/assets/fonts/BANDICOThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICOThinItalic_1.eot");
+  src: url("/assets/fonts/BANDICOThinItalic_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/BANDICOThinItalic_1.woff2") format("woff2"),
+    url("/assets/fonts/BANDICOThinItalic_1.woff") format("woff"),
+    url("/assets/fonts/BANDICOThinItalic_1.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICORegular.eot");
+  src: url("/assets/fonts/BANDICORegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/BANDICORegular.woff2") format("woff2"),
+    url("/assets/fonts/BANDICORegular.woff") format("woff"),
+    url("/assets/fonts/BANDICORegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bandico";
+  src: url("/assets/fonts/BANDICORegular_1.eot");
+  src: url("/assets/fonts/BANDICORegular_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/BANDICORegular_1.woff2") format("woff2"),
+    url("/assets/fonts/BANDICORegular_1.woff") format("woff"),
+    url("/assets/fonts/BANDICORegular_1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-BookItalic.eot");
+  src: url("/assets/fonts/Helixa-BookItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Helixa-BookItalic.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-BookItalic.woff") format("woff"),
+    url("/assets/fonts/Helixa-BookItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-BlackItalic.eot");
+  src: url("/assets/fonts/Helixa-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Helixa-BlackItalic.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-BlackItalic.woff") format("woff"),
+    url("/assets/fonts/Helixa-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-Bold.eot");
+  src: url("/assets/fonts/Helixa-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Helixa-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-Bold.woff") format("woff"),
+    url("/assets/fonts/Helixa-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-Book.eot");
+  src: url("/assets/fonts/Helixa-Book.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Helixa-Book.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-Book.woff") format("woff"),
+    url("/assets/fonts/Helixa-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-BoldItalic.eot");
+  src: url("/assets/fonts/Helixa-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Helixa-BoldItalic.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-BoldItalic.woff") format("woff"),
+    url("/assets/fonts/Helixa-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-Black.eot");
+  src: url("/assets/fonts/Helixa-Black.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Helixa-Black.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-Black.woff") format("woff"),
+    url("/assets/fonts/Helixa-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-Italic.eot");
+  src: url("/assets/fonts/Helixa-Italic.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Helixa-Italic.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-Italic.woff") format("woff"),
+    url("/assets/fonts/Helixa-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-Thin.eot");
+  src: url("/assets/fonts/Helixa-Thin.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Helixa-Thin.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-Thin.woff") format("woff"),
+    url("/assets/fonts/Helixa-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-Regular.eot");
+  src: url("/assets/fonts/Helixa-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Helixa-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-Regular.woff") format("woff"),
+    url("/assets/fonts/Helixa-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-Light.eot");
+  src: url("/assets/fonts/Helixa-Light.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Helixa-Light.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-Light.woff") format("woff"),
+    url("/assets/fonts/Helixa-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-ThinItalic.eot");
+  src: url("/assets/fonts/Helixa-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Helixa-ThinItalic.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-ThinItalic.woff") format("woff"),
+    url("/assets/fonts/Helixa-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helixa";
+  src: url("/assets/fonts/Helixa-LightItalic.eot");
+  src: url("/assets/fonts/Helixa-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Helixa-LightItalic.woff2") format("woff2"),
+    url("/assets/fonts/Helixa-LightItalic.woff") format("woff"),
+    url("/assets/fonts/Helixa-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Francy";
+  src: url("/assets/fonts/Francy-Regular.eot");
+  src: url("/assets/fonts/Francy-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Francy-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Francy-Regular.woff") format("woff"),
+    url("/assets/fonts/Francy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Francy";
+  src: url("/assets/fonts/Francy-Regular_1.eot");
+  src: url("/assets/fonts/Francy-Regular_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Francy-Regular_1.woff2") format("woff2"),
+    url("/assets/fonts/Francy-Regular_1.woff") format("woff"),
+    url("/assets/fonts/Francy-Regular_1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Francy";
+  src: url("/assets/fonts/Francy-Regular_2.eot");
+  src: url("/assets/fonts/Francy-Regular_2.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Francy-Regular_2.woff2") format("woff2"),
+    url("/assets/fonts/Francy-Regular_2.woff") format("woff"),
+    url("/assets/fonts/Francy-Regular_2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Francy";
+  src: url("/assets/fonts/Francy-Regular_3.eot");
+  src: url("/assets/fonts/Francy-Regular_3.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/Francy-Regular_3.woff2") format("woff2"),
+    url("/assets/fonts/Francy-Regular_3.woff") format("woff"),
+    url("/assets/fonts/Francy-Regular_3.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
