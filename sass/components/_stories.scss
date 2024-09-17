@@ -1,0 +1,98 @@
+.row {
+  padding: 0 8rem;
+}
+
+.story {
+  width: 75%;
+  background-color: rgba($white, 0.4);
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($shadow-dark, 0.1);
+  border-radius: 3px;
+  padding: 4rem;
+  font-size: $default-size;
+  font-family: "Helixa";
+  letter-spacing: 0.2px;
+  transform: skewX(-12deg);
+  position: relative;
+  margin-bottom: 8rem;
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
+
+  & > * {
+    transform: skewX(12deg);
+  }
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    transform: translateX(-3rem) skewX(12deg);
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none;
+    }
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
+  }
+
+  &__img {
+    height: 100%;
+    transform: translateX(-3rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.4s;
+  }
+
+  &__text {
+    transform: skewX(12deg);
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
+
+    h3 {
+      font-family: "Mosvita";
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+    }
+
+    p {
+      letter-spacing: 0.4px;
+    }
+  }
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: all 0.4s;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
+  }
+}
