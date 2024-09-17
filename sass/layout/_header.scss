@@ -1,0 +1,38 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba($light-green, 0.801) 100%,
+      rgba($dark-green, 0.819) 100%
+    ),
+    url(/images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+  &__logo-container {
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    font-family: "Ibrand";
+    font-size: 6rem;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, $dark-grey, $logo-white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__text-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
