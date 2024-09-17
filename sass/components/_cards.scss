@@ -1,0 +1,221 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    height: 50rem;
+    position: absolute;
+    transition: all 0.8s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($shadow-dark, 0.15);
+    overflow: hidden;
+
+    &--front {
+      background-color: $white;
+    }
+    &--back {
+      transform: rotateY(180deg);
+
+      &-one {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
+      }
+      &-two {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($medium-green, 0.85),
+          rgba($dark-green, 0.85)
+        );
+      }
+      &-three {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-tertiary-light, 0.85),
+          rgba($color-tertiary-dark, 0.85)
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--one {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
+        url(/images/beach-explorers.jpg);
+    }
+    &--two {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($medium-green, 0.85),
+          rgba($dark-green, 0.85)
+        ),
+        url(/images/night.jpg);
+    }
+    &--three {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-tertiary-light, 0.85),
+          rgba($color-tertiary-dark, 0.85)
+        ),
+        url(/images/explore.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 100;
+    text-align: right;
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    font-family: "Bandico";
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+
+    &--one {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 0.85)
+      );
+    }
+    &--two {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($medium-green, 0.85),
+        rgba($dark-green, 0.85)
+      );
+    }
+    &--three {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
+    }
+  }
+  &__details {
+    padding: 3rem;
+    font-family: "Helixa";
+
+    ul {
+      width: 80%;
+      margin: 0 auto;
+      padding-left: 0;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+
+        &:not(:last-child) {
+          padding-bottom: 1rem;
+          border-bottom: 1px solid $dark-grey;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    @include flex-center(
+      $direction: column,
+      $align: center,
+      $justify: space-evenly
+    );
+    height: 100%;
+    text-align: center;
+    color: $white;
+  }
+
+  &__price-only {
+    font-family: "Helixa";
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: -12rem;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+    margin: 0;
+    font-family: "Helixa";
+  }
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    border-radius: 3px;
+    background-color: $white;
+    box-shadow: 0 1.5rem 4rem rgba(rgba($shadow-dark, 0.15), 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+}

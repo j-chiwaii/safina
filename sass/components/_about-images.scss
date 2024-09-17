@@ -1,0 +1,37 @@
+.container {
+  position: relative;
+  @include respond(phone) {
+    display: none;
+  }
+
+  &__photo {
+    width: 65%;
+    box-shadow: 0 1.5rem 4rem rgba($shadow-dark, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 5;
+    transition: all 0.1s;
+
+    &--one {
+      left: 0;
+      top: -1rem;
+    }
+    &--two {
+      right: 0;
+      top: 7rem;
+    }
+    &--three {
+      left: 15%;
+      top: 15rem;
+    }
+
+    &:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($shadow-dark, 0.5);
+      z-index: 15;
+    }
+    &:hover &__photo:not(:hover) {
+      transform: scale(0.95);
+    }
+  }
+}

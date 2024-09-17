@@ -1,0 +1,101 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+body {
+  @include font-setup("Francy", 1.6rem);
+  color: 777;
+  padding: 3rem;
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $dark-green;
+  color: $white;
+}
+
+.header__main-heading {
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.header__primary-main {
+  display: block;
+  font-size: 6.2rem;
+  letter-spacing: 3.2rem;
+  animation: heading 3s ease 0s 1 normal forwards;
+  @include respond(phone) {
+    letter-spacing: 1rem;
+    font-family: 5rem;
+  }
+}
+
+.header__primary-sub {
+  display: block;
+  font-size: 2.4rem;
+  letter-spacing: 2.4rem;
+  animation: heading-sub 3s ease 0s 1 normal forwards;
+  @include respond(phone) {
+    letter-spacing: 0.5rem;
+  }
+}
+
+.about__heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  font-weight: bolder;
+  display: inline-block;
+  background-image: linear-gradient(to right, $medium-green, $dark-green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  font-family: "Helixa";
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+  &__button {
+    font-family: "Bandico";
+    letter-spacing: 1rem;
+  }
+}
+
+.about__section-one,
+.features {
+  color: $btn-color;
+
+  h3 {
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: "Bandico";
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+  }
+
+  p {
+    letter-spacing: 0.4px;
+    font-family: "Helixa";
+    font-size: 1.5rem;
+    font-weight: light;
+  }
+}

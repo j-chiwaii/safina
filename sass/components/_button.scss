@@ -1,0 +1,87 @@
+.header__btn {
+  color: $btn-color;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: pointer;
+  letter-spacing: 0.4rem;
+
+  &--hero:link,
+  &--hero:visited {
+    @extend %box-shadow;
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-radius: 10rem;
+    background-color: $white;
+    animation: btn 2s ease 0s 1 normal backwards;
+    transition: all 0.2s;
+  }
+
+  &--hero:hover {
+    transform: translateY(-2px);
+  }
+
+  &--hero:active {
+    box-shadow: 0.1rem 0.8rem 1.3rem -0.2rem $shadow-dark;
+  }
+}
+
+.about__button {
+  font-family: "Bandico";
+  letter-spacing: 0.5px;
+}
+
+.about__button {
+  &:link,
+  &:visited {
+    color: $dark-green;
+    display: inline-block;
+    padding: 3px;
+    border-bottom: 1px solid $dark-green;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.btn {
+  font-family: "Bandico";
+  &:link,
+  &:visited {
+    @extend %box-shadow;
+    padding: 2rem 4rem;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &__green {
+    display: inline-block;
+    margin-top: 6rem;
+    background-color: $dark-green;
+    color: $white;
+    letter-spacing: 0.2px;
+  }
+
+  &__white {
+    margin-top: -6rem;
+    background-color: $white;
+  }
+}
+
+.form__btn {
+  color: $white;
+  background-color: $dark-green;
+  @extend %box-shadow;
+  padding: 2rem 4rem;
+  border-radius: 30px;
+}
