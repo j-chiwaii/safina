@@ -181,6 +181,11 @@ body {
     font-size: 2.5rem;
   }
 }
+@media only screen and (max-width: 500px) {
+  .about__heading {
+    padding: 0 2rem;
+  }
+}
 .about__heading__button {
   font-family: "Bandico";
   letter-spacing: 1rem;
@@ -208,6 +213,12 @@ body {
   font-size: 1.5rem;
   font-weight: light;
 }
+@media only screen and (max-width: 500px) {
+  .about__section-one,
+  .features {
+    padding: 0 6rem;
+  }
+}
 
 .center-text {
   text-align: center;
@@ -223,6 +234,11 @@ body {
 
 .container {
   position: relative;
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    display: none;
+  }
 }
 @media only screen and (max-width: 37.5em) {
   .container {
@@ -360,6 +376,11 @@ body {
 .card__side--back {
   transform: rotateY(180deg);
 }
+@media only screen and (max-width: 75em) {
+  .card__side--back {
+    display: none;
+  }
+}
 .card__side--back-one {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
@@ -384,12 +405,15 @@ body {
 }
 .card__picture--one {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/images/beach-explorers.jpg);
+  background-position: center;
 }
 .card__picture--two {
   background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85)), url(/images/night.jpg);
+  background-position: center;
 }
 .card__picture--three {
   background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)), url(/images/explore.jpg);
+  background-position: center;
 }
 .card__heading {
   font-size: 2.8rem;
@@ -469,15 +493,13 @@ body {
     box-shadow: none;
   }
   .card__side--back {
-    transform: rotateY(0);
-    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    display: none;
   }
   .card:hover .card__side--front {
     transform: rotateY(0);
   }
   .card__details {
-    padding: 1rem 3rem;
+    padding: 3rem 3rem;
   }
   .card__cta {
     position: relative;
@@ -499,6 +521,12 @@ body {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 500px) {
+  .features {
+    padding: 0;
+  }
+}
+
 .features__box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -507,9 +535,19 @@ body {
   border-radius: 3px;
   transition: all 0.3;
 }
+@media only screen and (max-width: 1400px) {
+  .features__box {
+    padding: 2.5rem 1rem;
+  }
+}
 @media only screen and (max-width: 56.25em) {
   .features__box {
     padding: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .features__box {
+    padding: 3rem;
   }
 }
 .features__box--icon {
@@ -556,9 +594,9 @@ body {
   display: block;
   transition: all 0.3s;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .form__input {
-    width: 100%;
+    width: 70%;
   }
 }
 .form__input:focus {
@@ -641,9 +679,29 @@ body {
   position: absolute;
   top: 3rem;
 }
+@media only screen and (max-width: 75em) {
+  .form__btn {
+    top: 1.5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .form__btn {
+    top: -1rem;
+  }
+}
 
 .row {
   padding: 0 8rem;
+}
+@media only screen and (max-width: 75em) {
+  .row {
+    padding: 5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .row {
+    padding: 1rem;
+  }
 }
 
 .story {
@@ -662,13 +720,13 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .story {
-    width: 100%;
-    padding: 4rem;
-    padding-left: 7rem;
+    width: 80%;
+    padding: 6rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .story {
+    width: 70%;
     transform: skewX(0);
   }
 }
@@ -783,6 +841,34 @@ body {
   gap: 8rem;
   padding: 0 16rem;
 }
+@media only screen and (max-width: 75em) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__content {
+    padding: 0 12rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer__content {
+    padding: 0 9rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .footer__list {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__list {
+    padding: 0;
+  }
+}
 .footer__navigation, .footer__copyright {
   border-top: 1px solid #999;
 }
@@ -796,11 +882,22 @@ body {
   color: #eee;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 37.5em) {
+  .footer__link {
+    display: block;
+    margin: 0;
+  }
+}
 .footer__link:hover, .footer__link:active {
   margin-bottom: 0;
   padding-bottom: 2rem;
   color: #28b485;
   border-bottom: 3px solid #28b485;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__link {
+    padding: 1rem;
+  }
 }
 .footer__copyright {
   letter-spacing: 0.4px;
@@ -812,6 +909,22 @@ body {
   gap: 8rem;
   padding: 0 16rem;
 }
+@media only screen and (max-width: 75em) {
+  .about__section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .about__section {
+    padding: 0 16rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about__section {
+    padding: 0 3rem;
+  }
+}
 
 .features__section {
   display: grid;
@@ -819,12 +932,50 @@ body {
   gap: 6rem;
   padding: 24rem 16rem;
 }
+@media only screen and (max-width: 1400px) {
+  .features__section {
+    padding: 15rem 10rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .features__section {
+    display: flex;
+    padding: 16rem;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .features__section {
+    padding: 6rem;
+  }
+}
 
 .tours__section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6rem;
   padding: 0 16rem;
+}
+@media only screen and (max-width: 75em) {
+  .tours__section {
+    padding: 0 16rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .tours__section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .tours__section {
+    padding: 0 6rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .tours__section {
+    padding: 0 6rem;
+  }
 }
 
 .header {
@@ -861,6 +1012,16 @@ body {
 .navigation {
   font-family: "Helixa";
 }
+@media only screen and (max-width: 75em) {
+  .navigation {
+    display: none;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation {
+    display: none;
+  }
+}
 .navigation__checkbox {
   display: none;
 }
@@ -881,12 +1042,6 @@ body {
   .navigation__button {
     top: 4rem;
     right: 4rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .navigation__button {
-    top: 3rem;
-    right: 3rem;
   }
 }
 .navigation__background {
@@ -1028,6 +1183,11 @@ body {
   padding: 12rem 0;
   position: relative;
 }
+@media only screen and (max-width: 37.5em) {
+  .section-stories {
+    padding: 5rem 0;
+  }
+}
 
 .section-book {
   padding: 16rem 0;
@@ -1039,6 +1199,12 @@ body {
   background-size: cover;
   height: 50rem;
   border-radius: 3px;
+}
+@media only screen and (max-width: 56.25em) {
+  .book {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .book__form {
   width: 50%;
