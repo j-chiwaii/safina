@@ -30,6 +30,10 @@
 .section-stories {
   padding: 12rem 0;
   position: relative;
+
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
 }
 
 .section-book {
@@ -49,6 +53,11 @@
   height: 50rem;
   border-radius: 3px;
   @extend %box-shadow;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__form {
     width: 50%;
