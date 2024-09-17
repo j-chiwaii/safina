@@ -3,6 +3,22 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 8rem;
   padding: 0 16rem;
+
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include respond(tab-port) {
+  }
+
+  @include respond(phone) {
+    padding: 0 16rem;
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 0 3rem;
+  }
 }
 
 .features__section {
@@ -10,6 +26,20 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 6rem;
   padding: 24rem 16rem;
+
+  @media only screen and (max-width: 1400px) {
+    padding: 15rem 10rem;
+  }
+
+  @include respond(tab-land) {
+    display: flex;
+    padding: 16rem;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 6rem;
+  }
 }
 
 .tours__section {
@@ -17,4 +47,21 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 6rem;
   padding: 0 16rem;
+
+  @include respond(tab-land) {
+    padding: 0 16rem;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 0 6rem;
+  }
+
+  @media only screen and (max-width: 400px) {
+    padding: 0 6rem;
+  }
 }
