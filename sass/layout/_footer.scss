@@ -1,6 +1,6 @@
 .footer {
   background-color: $dark-grey-1;
-  padding: 10rem 0;
+  padding: 10rem 0 5rem 0;
   font-size: 1.5rem;
   color: $dark-grey;
   font-family: "Helixa";
@@ -87,4 +87,15 @@
   &__copyright {
     letter-spacing: 0.4px;
   }
+}
+
+.footer__name {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  padding: 0;
+}
+
+.footer__name:hover {
+  cursor: pointer;
 }
